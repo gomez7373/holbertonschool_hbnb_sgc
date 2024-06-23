@@ -45,7 +45,7 @@ To start the Flask application, run the following command:
 ```sh
 python3 api/app.py
 
-Project Structure
+## Project Structure
 Here is the structure of the project with descriptions of each file and directory:
 
 holbertonschool_hbnb_sgc/
@@ -79,25 +79,25 @@ holbertonschool_hbnb_sgc/
 
 ## Project Structure
 
-- **api/**: Contains all the API route files, each handling the CRUD operations for different models.
-- **models/**: Contains the model classes, including BaseModel and specific classes for User, Place, City, Country, Review, and Amenity.
-- **persistence/**: Contains the DataManager class responsible for saving and loading data from JSON files.
-- **tests/**: Contains the unit tests for models and API routes.
-- **data/**: Contains JSON files used for data persistence.
-- **requirements.txt**: Lists the Python packages required to run the project.
-- **README.md**: This file, containing the project documentation.
+**api/**: Contains all the API route files, each handling the CRUD operations for different models.
+**models/**: Contains the model classes, including BaseModel and specific classes for User, Place, City, Country, Review, and Amenity.
+**persistence/**: Contains the DataManager class responsible for saving and loading data from JSON files.
+**tests/**: Contains the unit tests for models and API routes.
+**data/**: Contains JSON files used for data persistence.
+**requirements.txt**: Lists the Python packages required to run the project.
+**README.md**: This file, containing the project documentation.
 
 ## Models
 
 The models are defined in the `models` directory and include the following classes:
 
-- **BaseModel**: The base class for all models, includes common attributes and methods.
-- **User**: Represents a user with attributes `email`, `first_name`, and `last_name`.
-- **Place**: Represents a rental place with various attributes like `host_id`, `name`, `description`, etc.
-- **City**: Represents a city with `name` and `country_code`.
-- **Country**: Represents a country with `code` and `name`.
-- **Review**: Represents a review with `place_id`, `user_id`, `rating`, and `comment`.
-- **Amenity**: Represents an amenity with `name`.
+**BaseModel**: The base class for all models, includes common attributes and methods.
+**User**: Represents a user with attributes `email`, `first_name`, and `last_name`.
+**Place**: Represents a rental place with various attributes like `host_id`, `name`, `description`, etc.
+**City**: Represents a city with `name` and `country_code`.
+**Country**: Represents a country with `code` and `name`.
+**Review**: Represents a review with `place_id`, `user_id`, `rating`, and `comment`.
+**Amenity**: Represents an amenity with `name`.
 
 All models inherit from `BaseModel` and utilize the `BaseModel.persistence` reference for data management.
 
@@ -107,51 +107,51 @@ The API routes are defined in the `api` directory and include the following blue
 
 ### User Routes
 
-- **Create a user**: `POST /users`
-- **Get all users**: `GET /users`
-- **Get a specific user**: `GET /users/<user_id>`
-- **Update a user**: `PUT /users/<user_id>`
-- **Delete a user**: `DELETE /users/<user_id>`
+**Create a user**: `POST /users`
+**Get all users**: `GET /users`
+**Get a specific user**: `GET /users/<user_id>`
+**Update a user**: `PUT /users/<user_id>`
+**Delete a user**: `DELETE /users/<user_id>`
 
 ### Place Routes
 
-- **Create a place**: `POST /places`
-- **Get all places**: `GET /places`
-- **Get a specific place**: `GET /places/<place_id>`
-- **Update a place**: `PUT /places/<place_id>`
-- **Delete a place**: `DELETE /places/<place_id>`
+**Create a place**: `POST /places`
+**Get all places**: `GET /places`
+**Get a specific place**: `GET /places/<place_id>`
+**Update a place**: `PUT /places/<place_id>`
+**Delete a place**: `DELETE /places/<place_id>`
 
 ### City Routes
 
-- **Create a city**: `POST /cities`
-- **Get all cities**: `GET /cities`
-- **Get a specific city**: `GET /cities/<city_id>`
-- **Update a city**: `PUT /cities/<city_id>`
-- **Delete a city**: `DELETE /cities/<city_id>`
+**Create a city**: `POST /cities`
+**Get all cities**: `GET /cities`
+**Get a specific city**: `GET /cities/<city_id>`
+**Update a city**: `PUT /cities/<city_id>`
+**Delete a city**: `DELETE /cities/<city_id>`
 
 ### Country Routes
 
-- **Create a country**: `POST /countries`
-- **Get all countries**: `GET /countries`
-- **Get a specific country**: `GET /countries/<country_id>`
-- **Update a country**: `PUT /countries/<country_id>`
-- **Delete a country**: `DELETE /countries/<country_id>`
+**Create a country**: `POST /countries`
+**Get all countries**: `GET /countries`
+**Get a specific country**: `GET /countries/<country_id>`
+**Update a country**: `PUT /countries/<country_id>`
+**Delete a country**: `DELETE /countries/<country_id>`
 
 ### Review Routes
 
-- **Create a review**: `POST /reviews`
-- **Get all reviews**: `GET /reviews`
-- **Get a specific review**: `GET /reviews/<review_id>`
-- **Update a review**: `PUT /reviews/<review_id>`
-- **Delete a review**: `DELETE /reviews/<review_id>`
+**Create a review**: `POST /reviews`
+**Get all reviews**: `GET /reviews`
+**Get a specific review**: `GET /reviews/<review_id>`
+**Update a review**: `PUT /reviews/<review_id>`
+**Delete a review**: `DELETE /reviews/<review_id>`
 
 ### Amenity Routes
 
-- **Create an amenity**: `POST /amenities`
-- **Get all amenities**: `GET /amenities`
-- **Get a specific amenity**: `GET /amenities/<amenity_id>`
-- **Update an amenity**: `PUT /amenities/<amenity_id>`
-- **Delete an amenity**: `DELETE /amenities/<amenity_id>`
+**Create an amenity**: `POST /amenities`
+**Get all amenities**: `GET /amenities`
+**Get a specific amenity**: `GET /amenities/<amenity_id>`
+**Update an amenity**: `PUT /amenities/<amenity_id>`
+**Delete an amenity**: `DELETE /amenities/<amenity_id>`
 
 ## Running Tests
 
