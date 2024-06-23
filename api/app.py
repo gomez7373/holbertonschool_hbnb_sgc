@@ -16,7 +16,6 @@ app.register_blueprint(amenity_bp)
 
 @app.route('/')
 def index():
-    return "Welcome to HBnB Evolution!"
-
+    return "Welcome to HBnB!"
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', debug=True)
