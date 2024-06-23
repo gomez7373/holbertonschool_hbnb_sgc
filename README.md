@@ -72,8 +72,6 @@ holbertonschool_hbnb_sgc/
 - ├── persistence/
 - │   └── data_manager.py    # DataManager class for data management
 - ├── requirements.txt       # Python packages required for the project
-- ├── test_data/             # Test data files
-- │   └── ...
 - ├── tests/
 - │   └── ...                # Test files for models and API routes
 - ├── requirements.txt       # Python packages required for the project
