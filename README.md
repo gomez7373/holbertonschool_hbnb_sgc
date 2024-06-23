@@ -48,6 +48,8 @@ python3 api/app.py
 Here is the structure of the project with descriptions of each file and directory:
 
 holbertonschool_hbnb_sgc/
+- ├── Dockerfile             # Docker configuration file
+- ├── README.md              # Project documentation
 - ├── api/
 - │   ├── app.py             # Main Flask application file
 - │   ├── user.py            # User API routes
@@ -56,6 +58,8 @@ holbertonschool_hbnb_sgc/
 - │   ├── country.py         # Country API routes
 - │   ├── review.py          # Review API routes
 - │   └── amenity.py         # Amenity API routes
+- ├── data/
+- │   └── ...                # JSON files for data persistence
 - ├── models/
 - │   ├── __init__.py        # Initialization file for models
 - │   ├── base_model.py      # BaseModel class definition
@@ -67,10 +71,11 @@ holbertonschool_hbnb_sgc/
 - │   └── amenity.py         # Amenity model class
 - ├── persistence/
 - │   └── data_manager.py    # DataManager class for data management
+- ├── requirements.txt       # Python packages required for the project
+- ├── test_data/             # Test data files
+- │   └── ...
 - ├── tests/
 - │   └── ...                # Test files for models and API routes
-- ├── data/
-- │   └── ...                # JSON files for data persistence
 - ├── requirements.txt       # Python packages required for the project
 - └── README.md              # Project documentation
 

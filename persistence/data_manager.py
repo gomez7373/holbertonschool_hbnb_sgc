@@ -53,6 +53,12 @@ class DataManager:
     def get(self, entity_id, entity_type):
         return self.data[entity_type].get(entity_id)
 
+    def get_by_email(self, email):
+        for user in self.data['User'].values():
+            if user.email == email:
+                return user
+        return None
+
     def update(self, entity):
         entity_type = entity.__class__.__name__
         self.data[entity_type][entity.id] = entity
