@@ -76,7 +76,7 @@ holbertonschool_hbnb_sgc/
 - ├── data/
 - │   └── ...                # JSON files for data persistence
 - ├── models/
-- │   ├── __init__.py        # Initialization file for models
+- │   ├── __init__.py        # Initialization file for models.
 - │   ├── base_model.py      # BaseModel class definition
 - │   ├── user.py            # User model class
 - │   ├── place.py           # Place model class
