@@ -1,4 +1,9 @@
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../')
+
 from flask import Flask
+import initialize_persistence  # Ensure persistence is initialized
 from api.user import user_bp
 from api.place import place_bp
 from api.city import city_bp

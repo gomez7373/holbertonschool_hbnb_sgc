@@ -6,6 +6,8 @@ user_bp = Blueprint('user_bp', __name__)
 @user_bp.route('/users', methods=['POST'])
 def create_user():
     data = request.get_json()
+    if User.persistence.get_by_email(data.get('email')):
+        return jsonify({'error': 'User with this email already exists'}), 400
     user = User(email=data.get('email'), first_name=data.get('first_name'), last_name=data.get('last_name'))
     user.save()
     return jsonify(user.to_dict()), 201
