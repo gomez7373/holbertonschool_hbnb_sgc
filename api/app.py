@@ -7,6 +7,7 @@ from api.review import review_bp
 from api.amenity import amenity_bp
 
 app = Flask(__name__)
+
 app.register_blueprint(user_bp)
 app.register_blueprint(place_bp)
 app.register_blueprint(city_bp)
@@ -17,5 +18,6 @@ app.register_blueprint(amenity_bp)
 @app.route('/')
 def index():
     return "Welcome to HBnB!"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
