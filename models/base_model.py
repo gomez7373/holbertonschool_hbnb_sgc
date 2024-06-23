@@ -9,7 +9,7 @@ class BaseModel:
 
     def save(self):
         self.updated_at = datetime.now()
-        from persistence.data_manager import DataManager  # Import here to avoid circular import
+        from persistence.data_manager import DataManager
         DataManager.instance().save(self)
 
     def to_dict(self):
@@ -20,5 +20,5 @@ class BaseModel:
         }
 
     def delete(self):
-        from persistence.data_manager import DataManager  # Import here to avoid circular import
+        from persistence.data_manager import DataManager
         DataManager.instance().delete(self.id, self.__class__.__name__)
