@@ -18,7 +18,6 @@ Welcome to the HBNB project, a web application for managing rental services simi
   - [Review Routes](#review-routes)
   - [Amenity Routes](#amenity-routes)
 - [Running Tests](#running-tests)
-- [License](#license)
 - [Author](#author)
 
 ## Installation
@@ -161,3 +160,6 @@ To ensure the functionality of the models and API routes, run the tests using th
 ``` sh
 python3 -m unittest discover -s tests
 ```
+
+## Author
+Sheila Gomez
