@@ -74,7 +74,7 @@ holbertonschool_hbnb_sgc/
 - │   ├── review.py          # Review API routes
 - │   └── amenity.py         # Amenity API routes
 - ├── data/
-- │   └── ...                # JSON files for data persistence
+- │   └── ...                # JSON files for data persistence.
 - ├── models/
 - │   ├── __init__.py        # Initialization file for models.
 - │   ├── base_model.py      # BaseModel class definition
