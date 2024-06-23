@@ -48,31 +48,31 @@ python3 api/app.py
 Here is the structure of the project with descriptions of each file and directory:
 
 holbertonschool_hbnb_sgc/
-├── api/
-│   ├── app.py             # Main Flask application file
-│   ├── user.py            # User API routes
-│   ├── place.py           # Place API routes
-│   ├── city.py            # City API routes
-│   ├── country.py         # Country API routes
-│   ├── review.py          # Review API routes
-│   └── amenity.py         # Amenity API routes
-├── models/
-│   ├── __init__.py        # Initialization file for models
-│   ├── base_model.py      # BaseModel class definition
-│   ├── user.py            # User model class
-│   ├── place.py           # Place model class
-│   ├── city.py            # City model class
-│   ├── country.py         # Country model class
-│   ├── review.py          # Review model class
-│   └── amenity.py         # Amenity model class
-├── persistence/
-│   └── data_manager.py    # DataManager class for data management
-├── tests/
-│   └── ...                # Test files for models and API routes
-├── data/
-│   └── ...                # JSON files for data persistence
-├── requirements.txt       # Python packages required for the project
-└── README.md              # Project documentation
+- ├── api/
+- │   ├── app.py             # Main Flask application file
+- │   ├── user.py            # User API routes
+- │   ├── place.py           # Place API routes
+- │   ├── city.py            # City API routes
+- │   ├── country.py         # Country API routes
+- │   ├── review.py          # Review API routes
+- │   └── amenity.py         # Amenity API routes
+- ├── models/
+- │   ├── __init__.py        # Initialization file for models
+- │   ├── base_model.py      # BaseModel class definition
+- │   ├── user.py            # User model class
+- │   ├── place.py           # Place model class
+- │   ├── city.py            # City model class
+- │   ├── country.py         # Country model class
+- │   ├── review.py          # Review model class
+- │   └── amenity.py         # Amenity model class
+- ├── persistence/
+- │   └── data_manager.py    # DataManager class for data management
+- ├── tests/
+- │   └── ...                # Test files for models and API routes
+- ├── data/
+- │   └── ...                # JSON files for data persistence
+- ├── requirements.txt       # Python packages required for the project
+- └── README.md              # Project documentation
 
 # Project Structure and API Documentation
 
