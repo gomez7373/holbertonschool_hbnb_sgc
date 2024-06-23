@@ -1,10 +1,7 @@
 import uuid
 from datetime import datetime
-from persistence.persistence import DataManager
 
 class BaseModel:
-    persistence = DataManager()
-
     def __init__(self, *args, **kwargs):
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
@@ -12,7 +9,8 @@ class BaseModel:
 
     def save(self):
         self.updated_at = datetime.now()
-        BaseModel.persistence.save(self)
+        from persistence.data_manager import DataManager  # Import here to avoid circular import
+        DataManager.instance().save(self)
 
     def to_dict(self):
         return {
@@ -22,4 +20,5 @@ class BaseModel:
         }
 
     def delete(self):
-        BaseModel.persistence.delete(self.id, self.__class__.__name__)
+        from persistence.data_manager import DataManager  # Import here to avoid circular import
+        DataManager.instance().delete(self.id, self.__class__.__name__)
