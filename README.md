@@ -147,11 +147,11 @@ The API routes are defined in the `api` directory and include the following blue
 
 ### Amenity Routes
 
-**Create an amenity**: `POST /amenities`
-**Get all amenities**: `GET /amenities`
-**Get a specific amenity**: `GET /amenities/<amenity_id>`
-**Update an amenity**: `PUT /amenities/<amenity_id>`
-**Delete an amenity**: `DELETE /amenities/<amenity_id>`
+- Create an amenity: `POST /amenities`
+- Get all amenities: `GET /amenities`
+- Get a specific amenity: `GET /amenities/<amenity_id>`
+- Update an amenity: `PUT /amenities/<amenity_id>`
+- Delete an amenity: `DELETE /amenities/<amenity_id>`
 
 ## Running Tests
 
