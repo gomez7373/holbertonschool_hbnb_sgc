@@ -145,7 +145,7 @@ The API routes are defined in the `api` directory and include the following blue
 **Update a review**: `PUT /reviews/<review_id>`
 **Delete a review**: `DELETE /reviews/<review_id>`
 
-### Amenity Routes
+## Amenity Routes
 
 - Create an amenity: `POST /amenities`
 - Get all amenities: `GET /amenities`
