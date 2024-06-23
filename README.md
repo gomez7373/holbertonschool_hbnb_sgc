@@ -2,6 +2,21 @@
 
 Welcome to the HBNB project, a web application for managing rental services similar to Airbnb. This project is developed as part of the Holberton School curriculum, focusing on building a full-stack web application with a comprehensive backend and API.
 
+# command
+
+```sh
+$ python3 api/app.py
+```
+
+# RUN:
+
+- http://172.18.195.12:5000/
+- http://172.18.195.12:5000/users
+- http://172.18.195.12:5000/places
+- http://172.18.195.12:5000/countries
+- http://172.18.195.12:5000/cities
+- http://172.18.195.12:5000/reviews
+  
 ## Table of Contents
 
 - [Holberton School - HBNB](#holberton-school---hbnb)
